@@ -1,0 +1,7 @@
+{  "homepage"  :" http://estherlardze.github.io/alx-react",
+   "predeploy" : "npm run build",
+   "deploy" : "gh-pages -d build",
+   "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
