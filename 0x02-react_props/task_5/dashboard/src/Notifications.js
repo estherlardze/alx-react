@@ -1,7 +1,9 @@
 import React from "react";
 import "./Notifications.css";
-import closeIcon from "../assets/close-icon.png";
-import { getLatestNotification } from "../utils/utils";
+
+//this icon doesnt exist, where is it? am coming
+import closeIcon from "./close-icon.png";
+import { getLatestNotification } from "./utils";
 
 function Notifications() {
   return (
