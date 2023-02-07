@@ -13,7 +13,7 @@ describe("Course List Row component test", () => {
     const wrapper = shallow(<CourseListRow isHeader={true} textFirstCell="test" textSecondCell={null} />);
 
     expect(wrapper.find("tr").children()).toHaveLength(1);
-    expect(wrapper.find("tr").childAt(0).html()).toEqual('<th colSpan="2">test</th>');
+    expect(wrapper.find("tr").childAt(0).html()).toEqual('<th style="background-color:#deb5b545" colSpan="2">test</th>');
   });
 
   it("should render two cells when textSecondCell not null", () => {
@@ -24,4 +24,3 @@ describe("Course List Row component test", () => {
     expect(wrapper.find("tr").childAt(1).html()).toEqual("<td>test</td>");
   });
 });
-
