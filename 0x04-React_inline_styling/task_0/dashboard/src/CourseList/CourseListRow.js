@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
 
-  const rowStylyle = {
+  const rowStyle = {
     backgroundColor: '#f5f5f5ab'
   }
   const headerStyle = {
@@ -11,7 +11,7 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
   }
 
   return (
-    <tr style={rowStylyle}>
+    <tr style={rowStyle}>
       {isHeader ? (
         textSecondCell === null ? (
           <th colSpan={2} style={headerStyle}>{textFirstCell}</th>
